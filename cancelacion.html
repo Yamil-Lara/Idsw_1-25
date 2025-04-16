@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reserva Expirada</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Tiempo Para Reserva Expirada</h1>
+    <img src="https://cdn.pixabay.com/photo/2014/10/06/04/29/sad-476039_1280.png" alt="Emoji Triste" class="emoji" />
+    <p>El tiempo límite para pagar ha sido superado.<br>Puedes intentar reservar nuevamente</p>
+    <button id="buscarBtn">Buscar Otro</button>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <p>¿Seguro quieres volver?</p>
+      <div class="modal-buttons">
+        <button id="confirmYes">Sí</button>
+        <button id="confirmNo">No</button>
+      </div>
+    </div>
+  </div>
+  <link rel="stylesheet" href="styles.css" />
+<script src="./dist/cancelacion.js" defer></script>
+</body>
+</html>
