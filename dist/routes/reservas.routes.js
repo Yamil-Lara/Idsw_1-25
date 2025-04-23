@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const reservas_controller_1 = require("../controllers/reservas.controller");
+const router = (0, express_1.Router)();
+router.post('/', reservas_controller_1.crearReserva);
+router.post('/pago/:idreserva', reservas_controller_1.confirmarPago);
+router.get('/activa/:idrenter', reservas_controller_1.verReservaActiva);
+router.post('/cancelar-expiradas', reservas_controller_1.cancelarExpiradas);
+router.post('/cancelar/:idreserva', reservas_controller_1.cancelarReserva);
+router.get('/obtenerTiempoReserva/:idReserva', reservas_controller_1.obtenerTiempoReserva);
+exports.default = router;
